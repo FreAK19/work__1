@@ -1,0 +1,78 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+
+/// Block button
+
+.button {
+  display: inline-block;
+  font-weight: normal;
+  font-size: $btn-font-size/16 + rem;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: $btn-letter-spacing;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: $btn-padding-top-bottom $btn-padding-left-right;
+  border-radius: $border-radius;
+  border: $btn-border;
+  text-transform: $btn-text-transform;
+  color: $btn-color;
+
+  &:hover {
+    cursor: pointer;
+    color: #959595;
+    border: 1px solid #959595;
+  }
+}
+
+/// Modifiers
+
+.button--theme-white {
+  background: $bg-button-white;
+}
+
+.button--theme-red {
+  background: $bg-button-red;
+  
+  &:hover {
+    background: #a3513f;
+  }
+}
+
+.button--theme-violet {
+  background: $bg-button-violet;
+
+  &:hover {
+    background: #767bb3;
+  }
+}
+
+.button--theme-dark {
+  background: $bg-button-dark;
+
+  &:hover {
+    background: $bg-button-dark-hover;
+  }
+}
+
+.button--read-more {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button__icon {
+
+}
+
+.button__text {
+
+}
